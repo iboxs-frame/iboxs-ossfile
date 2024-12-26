@@ -1,0 +1,25 @@
+{
+    "name": "iboxs/ossfile",
+    "description": "IBOXS OSSFILE",
+    "type": "1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zqu",
+            "email": "zqu1016@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "iboxs\\ossfile\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "iboxs\\ossfile\\OSS::install"
+        ]
+    }
+}
