@@ -107,7 +107,7 @@ class OSS
             return 'token错误';
         }
         $filePath=self::getFilePath($url);
-        if(!$filePath){
+        if(!file_exists($filePath)){
             return response('文件不存在','404');
         }
         return response()->file($filePath);
